@@ -106,7 +106,9 @@ const drawProblem = (hints, problem) => {
     <div class="card">
       <div class="flex flex-col gap-3">
         <span class="info_label">Category</span>
+        <span class="flex gap-3">
         ${category}
+        </span>
       </div>
     </div>
   `
@@ -114,7 +116,9 @@ const drawProblem = (hints, problem) => {
     <div class="card">
       <div class="flex flex-col gap-3">
         <span class="info_label">Hint</span>
+        <span class="flex gap-3">
         ${fullHint}
+        </span>
       </div>
     </div>
   `
