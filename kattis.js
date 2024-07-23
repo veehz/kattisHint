@@ -73,12 +73,9 @@ const requestHintUpdate = () => {
 
 const drawListing = (hints) => {
   console.log("Drawing on listing")
-  const tableHeader = `
-  <th class="table-item-autofit">
-    <a href="#">Category</a>
-  </th>
-  `
-  insertAfter(document.querySelector(".table2 > thead > tr :nth-last-child(3)"), toDOM(tableHeader))
+  const tableHeader = `<th>Category</th>`
+
+  insertAfter(document.querySelector("section .table2 > thead > tr > th:nth-last-child(3)"), toDOM(tableHeader))
 
   document.querySelectorAll(".table2 > tbody > tr").forEach((row) => {
     const problem = row.querySelector("td:nth-of-type(1) > a").getAttribute("href").split("/")[2];
